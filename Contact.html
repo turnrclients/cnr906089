@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Certified chartered accountants offering accounting, taxation, audit, and financial advisory services for businesses and individuals.">
+    <meta name="keywords" content="chartered accountant, accounting, taxation, financial advisory">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/middle_sections.css">
+    <link rel="stylesheet" href="assets/css/anim-effects.css">
+    <link rel="stylesheet" href="assets/css/components/header-45.css">
+    <link rel="stylesheet" href="assets/css/components/footer-13.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/custom-Imports.css">
+    <link rel="stylesheet" href="assets/css/resonsive.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        :root {
+            --site-font: "Rethink Sans", sans-serif;
+        }
+
+        body,
+        #wrapper,
+        #wrapper * {
+            font-family: var(--site-font) !important;
+        }
+    </style>
+</head>
+
+<body class="theme-1">
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="mainPageContent">
+            <section class="section-wrapper contact-21">
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6 contact-21 contact-left anim-fade-in">
+                            <div class="contact-subtitle">Stay Connected</div>
+                            <div class="contact-title">Contact Our Chartered Accountant Firm</div>
+                            <p>We assist individuals and businesses with tax filing, auditing, compliance and financial
+                                consultancy.
+                                Reach out and we will be glad to help.</p>
+
+                            <div class="contact-info">
+                                <p><i class="bi bi-geo-alt"></i> Fincrest Chartered Accountants, 2nd Floor, Business
+                                    Plaza, Pune, India</p>
+                                <p><i class="bi bi-telephone"></i> (+91) 98765 43210</p>
+                                <p><i class="bi bi-envelope"></i> support@fincrestca.com</p>
+                                <p><i class="bi bi-clock"></i> Mon - Sat: 10:00 AM – 07:00 PM</p>
+                            </div>
+
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-md-6 contact-21 contact-right anim-fade-in">
+                            <div class="contact-title">Request a Consultation</div>
+                            <p>Fill out your details and our team will contact you shortly.</p>
+
+                            <form method="POST" id="contact-form">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" placeholder="Name" name="name"
+                                                required>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="email" class="form-control" placeholder="Email" name="email"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-contact" onclick="sendEmailDataToGitHub()">Send
+                                    Message</button>
+                                <!-- Form Message -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <p class="form-message"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/jquery.main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/Observer.min.js"></script>
+    <script src="assets/js/gsap.effects.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/common_js/send_email.js"></script>
+    <script src="assets/js/common_js/html_image_editor.js"></script>
+    <script src="assets/js/common_js/windows_postmessage.js"></script>
+    <script>
+        var fileName = document.title || "index";
+
+        $(document).ready(function () {
+            loadHeaderFooter("header", "client-assets/cnr906089/cnr906089/header.html");
+            loadHeaderFooter("footer", "client-assets/cnr906089/cnr906089/footer.html");
+
+            loadHeaderFooter("header", "header.html");
+            loadHeaderFooter("footer", "footer.html");
+        });
+
+        function loadHeaderFooter(id, file) {
+            $("#" + id).load(file, function (response, status, xhr) {
+                if (status === "error") {
+                    console.error("Error loading " + file + ":", xhr.status, xhr.statusText);
+                    return;
+                }
+
+                $("#" + id).find("a").addClass("edit-site");
+
+                if (id === "header") {
+                    if (fileName.toLowerCase() === "index" || fileName.toLowerCase() === "home") {
+                        $("#" + id).find(".main-header-section").css("display", "block");
+                    } else {
+                        $("#" + id).find(".main-header-section").css("display", "none");
+                        $("#" + id).find(".header-breadcrumb-section").css("display", "block");
+                        $("#" + id).find(".header-breadcrumb-section .Page_name")
+                            .text(fileName.charAt(0).toUpperCase() + fileName.slice(1));
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="assets/js/middle-section.js"></script>
+
+</body>
+
+</html>
