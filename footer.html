@@ -6,11 +6,12 @@
 				<div class="widget-area col-xs-12 col-sm-6 col-md-6 col-lg-5">
 					<div class="widget widget_text clearfix">
 						<div class="footer-logo">
-							<img id="logo-img-1" class="img-center standardlogo" src="assets/images/logo-footer-13.png"
-								alt="logo-img">
+							<img id="logo-img-1" class="img-center standardlogo client_logo"
+								src="assets/images/logo-footer-13.png" alt="logo-img">
 						</div>
 						<p>
-							Fincrest is a Chartered Accountancy firm dedicated to delivering accurate, reliable, and
+							<span class="company_name">Fincrest</span> is a Chartered Accountancy firm dedicated to
+							delivering accurate, reliable, and
 							strategic financial solutions.
 							We assist individuals, businesses, and organizations with taxation, accounting, auditing,
 							and financial advisory services.
@@ -62,7 +63,7 @@
 		<div class="bottom-footer-text">
 			<div class="row copyright text-center">
 				<div class="col-lg-12 col-md-12 col-sm-12 d-md-flex d-sm-block justify-content-center">
-					<span>Copyright © 2025
+					<span>Copyright © <span id="currentYear"></span>
 						<a href="index.html">Fincrest &amp; Co.</a> All Rights Reserved.
 					</span>
 					<div id="footer-nav-menu">
@@ -77,3 +78,8 @@
 		</div>
 	</div>
 </footer>
+<script>
+	$(document).ready(function () {
+		$("#currentYear").text(new Date().getFullYear());
+	});
+</script>

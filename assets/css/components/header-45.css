@@ -70,10 +70,25 @@
       /* border-bottom: 1px solid #ffffff30; */
     }
 
-    .header-45 .logo img {
-      max-height: 50px;
-    }
+.header-45 .logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
 
+.header-45 .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header-45 .logo img.client_logo {
+    width: 150px;
+    height: 50px;
+    max-width: 150px;
+    max-height: 50px;
+    object-fit: contain;
+    display: block;
+}
     .header-45 .main-navigation.navbar-right > li > a {
       font-weight: 800;
       font-size: 13px;
